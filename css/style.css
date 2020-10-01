@@ -49,7 +49,7 @@
 }
 .article5{
     grid-area: a5;
-    background: purple; 
+    background: rgb(228, 171, 228); 
 }
 .article6{
     grid-area: a6;
@@ -66,7 +66,11 @@
 
 .innergridwrapper{
     grid-area:se;
-    background-color: green;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+
     
 }
 .aside{
@@ -81,4 +85,11 @@
 
 h5{
     font-family: sans-serif;
+    margin:3px;
+     font-size: 16px;
  }
+
+ .innerdiv{
+     background-color: green;
+ }
+
