@@ -1,0 +1,54 @@
+*{
+    margin: 8;
+}
+
+.gridwrapper{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    'as1 as2 he he'
+    'as1 as2 a1 a1'
+    'as1 as2 a2 a2'
+    'as1 as2 fo fo'
+    'as1 as2 fo fo';
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+}
+
+.header{
+    grid-area: he;
+    background-color:rgb(233, 85, 109);
+}
+
+.aside1{
+    grid-area: as1;
+    background-color: goldenrod;
+}
+
+.aside2{
+    grid-area: as2;
+    background-color: brown;
+}
+
+.article1{
+    grid-area: a1;
+    background-color: darkcyan;
+}
+
+.article2{
+    grid-area: a2;
+    background-color: darkkhaki;
+}
+
+.footer{
+    grid-area: fo;
+    background-color: darkorange;
+}
+
+h3{
+    font-family: verdana;
+    font-size: 18px;
+    margin: 10px;
+}

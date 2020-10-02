@@ -1,0 +1,64 @@
+*{
+  margin: 5;  
+}
+
+.grid{
+    display: grid;
+    height: 100vh;
+    width:100vw;
+    grid-template-areas: 
+    'he he na'
+    'a1 a1 a1'
+    'se se as'
+    'se se as'
+    'fo fo fo';
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 6px;
+
+
+}
+
+.artcle1{
+    grid-area: a1;
+    background-color: khaki;
+}
+
+.header{
+    grid-area: he;
+    background-color: lightcoral;
+}
+
+.nav{
+    grid-area: na;
+    background-color: lightgreen;
+
+}
+
+.outergrid{
+    grid-area: se;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 6px;
+    
+}
+
+.innergrid{
+    background-color: lightseagreen;
+}
+.aside{
+    grid-area: as;
+    background-color: lightpink;
+}
+
+.footer{
+    grid-area: fo;
+    background-color: lightyellow;
+}
+
+h3{
+    margin: 4px;
+    font-family:Tahoma, sans-serif;
+    
+}
